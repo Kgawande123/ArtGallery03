@@ -1,0 +1,93 @@
+/* Body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(224, 138, 190, 0.3); /* Light background color */
+  
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the screen */
+}
+
+/* Style the login form container with a linear gradient */
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #d98cac, #b5a6c9, #aaddd9); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Title Styling */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style the input fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Input fields focus state */
+.input-group input:focus {
+  border-color: #55b570; /* Focus border color */
+  box-shadow: 0 0 5px rgba(85, 181, 112, 0.5);
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #55b570;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+  background-color: #45a35b;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}

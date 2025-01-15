@@ -1,0 +1,209 @@
+/* Main Cart Container */
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #462e37, #6792c6);
+}
+
+
+  
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.cart-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+/* Cart Items Table */
+.cart-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-right: 20px;
+}
+  
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+  
+.cart-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+  
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+}
+  
+button:hover {
+    background-color: #218838;
+}
+  
+/* Remove button styling */
+.remove-btn {
+    background-color: #d13a49;
+}
+  
+.remove-btn:hover {
+    background-color: #c82333;
+}
+  
+/* Checkout Cart Summary */
+.checkout-cart-summary {
+    width: 30%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+  
+.checkout-cart-summary h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.summary-table td {
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+  
+.summary-table tr:last-child td {
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+.total-row td {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Updated Checkout Button */
+/* Updated Checkout Button */
+.checkout-btn {
+    width: 50%; /* Adjusted to be smaller than full width */
+    background: linear-gradient(90deg, #28a745, #218838); /* Gradient for a stylish look */
+    color: white;
+    padding: 10px; /* Smaller padding for compactness */
+    border-radius: 8px; /* Softer rounded edges */
+    border: none;
+    cursor: pointer;
+    font-size: 10px; /* Reduced font size for better proportion */
+    font-weight: bold; /* Emphasis on button text */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Subtle depth effect */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth animations */
+    margin: 12px auto; /* Center alignment with balanced spacing */
+    text-align: center;
+    text-transform: uppercase; /* Consistent, bold button label */
+}
+
+.checkout-btn:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34); /* Darker gradient hover effect */
+    transform: scale(1.03); /* Slight enlargement on hover */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Buttons Container */
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+  
+/* Clear Cart Button */
+.clear-cart-btn {
+    width: 100%;
+    background-color: #487eb8; /* Same blue color as Continue Shopping */
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    display: block; /* Make it block-level to span the width of its container */
+    text-align: center;
+}
+
+/* Clear Cart Button Hover */
+.clear-cart-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Clear Cart Button Container */
+.clear-cart-btn-container {
+    text-align: left; /* Align the button to the left */
+    margin-bottom: 20px; /* Space between the buttons */
+}
+  
+/* Continue Shopping Button */
+.continue-shopping-btn {
+    width: 100%;
+    background-color: #1f436b;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+  
+.continue-shopping-btn:hover {
+    background-color: #0056b3;
+}
+  
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cart-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .checkout-cart-summary {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .summary-table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .checkout-btn {
+      font-size: 16px;
+    }
+  
+    .buttons-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+}

@@ -1,0 +1,116 @@
+/* Body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(224, 138, 190, 0.3); /* Light background color */
+   
+}
+
+/* Container for the register form */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the screen */
+  padding: 20px;
+}
+
+/* Style the register form container with the light gradient */
+.register-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #8c93b4, #ffafcc, #b9e5f2); /* Light yellow, pastel pink, light blue */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Title Styling */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px; /* Padding inside the form */
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Style the input fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Label styling */
+.input-group label {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Input field styling */
+.input-group input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Input fields focus state */
+.input-group input:focus {
+  border-color: #55b570; /* Focus border color */
+  box-shadow: 0 0 5px rgba(85, 181, 112, 0.5);
+}
+
+/* Submit button styling */
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #55b570;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+  background-color: #45a35b;
+}
+
+/* Message styles */
+.message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e74c3c; /* Error message color */
+}
+
+.message.success {
+  color: #2ecc71; /* Success message color */
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+body{
+  background-image: linear-gradient(to right, #d7d3b2, #deb9c7, #a9d4e0);
+}

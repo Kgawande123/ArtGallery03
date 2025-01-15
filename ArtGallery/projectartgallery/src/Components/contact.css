@@ -1,0 +1,37 @@
+.contact-container {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    background: linear-gradient(to right, #bfbeb4, #d1f2c4);
+    
+  }
+  .abc{
+    background: linear-gradient(to top right, #f2d1d1, #fdf8b8);
+
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  

@@ -1,0 +1,101 @@
+/* Container for the entire payment form */
+.payment-container {
+  padding: 30px;
+  max-width: 450px;
+  margin: 50px auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #9abddf, #d38fbc);
+
+}
+
+/* Heading for the payment section */
+.payment-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Payment form */
+.payment-form {
+  display: flex;
+  flex-direction:column;
+}
+
+/* Form group for input fields */
+.form-group {
+  margin-bottom: 25px;
+}
+
+/* Card element input field */
+.card-element {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius:8px;
+  font-size: 17px;
+  width: 90%;
+  transition: border-color 0.3s ease;
+}
+
+.card-element:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Payment button */
+.payment-button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Button hover effect */
+.payment-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Button focus effect */
+.payment-button:focus {
+  outline: none;
+}
+
+/* Loading spinner */
+.circular-progress-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design: Ensure the form is responsive on smaller screens */
+@media (max-width: 500px) {
+  .payment-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .payment-container h2 {
+    font-size: 20px;
+  }
+}

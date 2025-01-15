@@ -1,0 +1,177 @@
+/* gallery.css */
+
+/* Container for the entire gallery */
+
+.gallery-container {
+  padding: 50px 25px;
+  background: radial-gradient(circle, #ffffff, #e6e9f0);
+  font-family: "Poppins", sans-serif;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f8c8d8, #a7c6ed);
+}
+
+/* Main heading style */
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  font-weight: 900;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter section styling */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.filters input,
+.filters select {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Grid styling for gallery items */
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 500; 
+   /* Adjust to 1fr for flexibility */
+  gap: 30px;
+  margin-top: 25px;
+}
+/* Styling for individual gallery items */
+.gallery-item {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #e8f5e9, #ffffff);
+}
+
+/* Image styling inside gallery items */
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(95%);
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+/* Button styling inside each gallery item */
+button {
+  padding: 12px 35px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.2);
+}
+
+button:hover {
+  background: #388e3c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 142, 60, 0.3);
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 50px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gallery-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 10px 25px;
+  }
+  .cart-icon {
+  position: f;
+  top: 20px;
+  right: 20px;
+  font-size: 18px; 
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon:hover {
+  color: #007bff;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px; /* Adjusted size for the count */
+  font-weight: bold;
+}
+
+  
+}
+
